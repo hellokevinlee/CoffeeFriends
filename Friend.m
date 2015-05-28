@@ -10,6 +10,7 @@
 
 @implementation Friend
 
+// the basic setup to return the initwith method. The properties you set in the .h file are being used here
 - (instancetype)initWithFullName:(NSString *)name aFavoriteCoffee:(NSString *)favoriteCoffee aProfilePicture:(UIImage *)image;
 {
     self = [super init];
@@ -22,11 +23,11 @@
     return self;
 }
 
+// creates the sample data using the custom initwith method. Then adds the data to a mutable array and this entire method returns a mutable array
 + (NSMutableArray *)createSampleData
 {
 
     Friend *jason = [[Friend alloc]initWithFullName:@"Jason Beets" aFavoriteCoffee:@"Bolivia Dream" aProfilePicture:[UIImage imageNamed:@"obama"]];
-
 
     Friend *melissa = [[Friend alloc]initWithFullName:@"Melissa Chanel" aFavoriteCoffee:@"Midnight Blues" aProfilePicture:[UIImage imageNamed:@"jolie"]];
 
