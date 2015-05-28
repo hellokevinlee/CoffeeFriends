@@ -7,16 +7,19 @@
 //
 
 #import "BuddyListViewController.h"
+#import "Friend.h"
+
+
 #import "BuddyListTableViewCell.h"
 #import <QuartzCore/QuartzCore.h>
 #import "AddedFriendsViewController.h"
-#import "Friend.h"
 
 @interface BuddyListViewController () <UITableViewDataSource, UITableViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property NSMutableArray *friendListArray;
 @property NSMutableArray *addedFriendListArray;
+
 
 @end
 
