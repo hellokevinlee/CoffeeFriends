@@ -65,10 +65,6 @@
     cell.favoriteCoffeeLabel.text = [NSString stringWithFormat:@"Favorite Coffee: %@", myFriend.favoriteCoffee];
 
     cell.profilePictureImageView.image = myFriend.profilePicture;
-    cell.profilePictureImageView.layer.cornerRadius = 32.5;
-    cell.profilePictureImageView.clipsToBounds = YES;
-    cell.profilePictureImageView.layer.borderWidth = 0.4f;
-    cell.profilePictureImageView.layer.borderColor = [UIColor grayColor].CGColor;
 
     return cell;
 }
