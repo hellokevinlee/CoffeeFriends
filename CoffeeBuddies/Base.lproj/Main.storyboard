@@ -187,7 +187,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="wwl-zQ-aqM" id="FcA-lU-bV1"/>
-                        <segue destination="tC0-df-0qE" kind="show" identifier="showFriends" id="MYu-9D-Bj5"/>
+                        <segue destination="tC0-df-0qE" kind="show" identifier="showFriends" id="A2a-EU-7Pk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -215,7 +215,7 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="asw-fc-UzG" id="B5e-yb-XCL">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8ci-kl-Qoe">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8ci-kl-Qoe">
                                                     <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="65" id="5ao-fx-HbC"/>
@@ -330,24 +330,20 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="Aql-Z7-ShO" secondAttribute="trailing" constant="-16" id="8vR-Fl-Jao"/>
-                            <constraint firstItem="Aql-Z7-ShO" firstAttribute="leading" secondItem="5FB-rn-jfK" secondAttribute="leadingMargin" constant="-16" id="Izf-bd-e0G"/>
-                            <constraint firstItem="8Sp-Nc-PRM" firstAttribute="top" secondItem="Aql-Z7-ShO" secondAttribute="bottom" id="Wrx-2A-6p5">
-                                <variation key="widthClass=compact" constant="0.0"/>
-                            </constraint>
-                            <constraint firstItem="Aql-Z7-ShO" firstAttribute="top" secondItem="5FB-rn-jfK" secondAttribute="topMargin" id="tZl-gW-k2q">
-                                <variation key="widthClass=compact" constant="60"/>
-                            </constraint>
+                            <constraint firstItem="8Sp-Nc-PRM" firstAttribute="top" secondItem="Aql-Z7-ShO" secondAttribute="bottom" id="DBr-gV-lNt"/>
+                            <constraint firstItem="Aql-Z7-ShO" firstAttribute="top" secondItem="i3k-h3-xJS" secondAttribute="bottom" id="IhY-if-NlZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Aql-Z7-ShO" secondAttribute="trailing" constant="-16" id="XKF-g6-QPM"/>
+                            <constraint firstItem="Aql-Z7-ShO" firstAttribute="leading" secondItem="5FB-rn-jfK" secondAttribute="leadingMargin" constant="-16" id="aQg-xR-1xj"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="Aql-Z7-ShO"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="8vR-Fl-Jao"/>
-                                <exclude reference="Izf-bd-e0G"/>
-                                <exclude reference="tZl-gW-k2q"/>
-                                <exclude reference="Wrx-2A-6p5"/>
+                                <exclude reference="IhY-if-NlZ"/>
+                                <exclude reference="XKF-g6-QPM"/>
+                                <exclude reference="aQg-xR-1xj"/>
+                                <exclude reference="DBr-gV-lNt"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -355,10 +351,10 @@
                                 <include reference="Aql-Z7-ShO"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="8vR-Fl-Jao"/>
-                                <include reference="Izf-bd-e0G"/>
-                                <include reference="tZl-gW-k2q"/>
-                                <include reference="Wrx-2A-6p5"/>
+                                <include reference="IhY-if-NlZ"/>
+                                <include reference="XKF-g6-QPM"/>
+                                <include reference="aQg-xR-1xj"/>
+                                <include reference="DBr-gV-lNt"/>
                             </mask>
                         </variation>
                     </view>

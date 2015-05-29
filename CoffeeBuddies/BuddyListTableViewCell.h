@@ -12,7 +12,6 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *favoriteCoffeeLabel;
-
 @property (weak, nonatomic) IBOutlet UIImageView *profilePictureImageView;
 
 

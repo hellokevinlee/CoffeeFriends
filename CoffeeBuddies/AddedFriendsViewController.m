@@ -9,11 +9,9 @@
 #import "AddedFriendsViewController.h"
 #import "BuddyListTableViewCell.h"
 #import "Friend.h"
+#import <QuartzCore/QuartzCore.h> 
 
 @interface AddedFriendsViewController () <UITableViewDataSource, UITableViewDelegate>
-
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
-
 
 @end
 
@@ -32,7 +30,7 @@
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return  self.addedFriendListArray.count;
+    return self.addedFriendListArray.count;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
