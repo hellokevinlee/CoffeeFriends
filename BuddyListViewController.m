@@ -101,18 +101,20 @@
 - (IBAction)addFriendButtonTapped:(UIBarButtonItem *)sender
 {
 
+    // prints a numerical placeholder for the number of friends in the addedFriendListArray
     NSLog(@"There are a total number of %lu friends in the array", self.addedFriendListArray.count);
 
-    NSLog(@"the friends are %@", self.addedFriendListArray);
-
+    // performs the segue with identifier
     [self performSegueWithIdentifier:@"showFriends" sender:sender];
 
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
+    // checks to see if the identifier matches then performs segue code
     if ([segue.identifier isEqual: @"showFriends"])
     {
+        // sets the addedFriendListArray property from destination view controller to the array from this view controller
         AddedFriendsViewController *vc = segue.destinationViewController;
         vc.addedFriendListArray = self.addedFriendListArray;
     }
