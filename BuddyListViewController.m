@@ -93,7 +93,7 @@
     [tableView reloadData];
 }
 
-
+#pragma mark - IBActions
 - (IBAction)addFriendButtonTapped:(UIBarButtonItem *)sender
 {
 
@@ -105,6 +105,7 @@
 
 }
 
+#pragma mark - Prepare for Segue
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     // checks to see if the identifier matches then performs segue code
